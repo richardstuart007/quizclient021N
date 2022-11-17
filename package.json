@@ -1,6 +1,6 @@
 {
   "name": "quizclient021n",
-  "homepage": "https://richardstuart007.github.io/quizclient021N",
+  "homepage": "https://richardstuart007.github.io/quizclient021n",
   "version": "1.21.1",
   "private": true,
   "dependencies": {
@@ -61,10 +61,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richardstuart007/quizclient021N.git"
+    "url": "git+https://github.com/richardstuart007/quizclient021n.git"
   },
   "bugs": {
-    "url": "https://github.com/richardstuart007/quizclient021N/issues"
+    "url": "https://github.com/richardstuart007/quizclient021n/issues"
   },
   "description": ""
 }
