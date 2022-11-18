@@ -1,27 +1,27 @@
 //
-//  Browser Port (9003) ==> Server REMOTE server
+//  Browser Port (9103) ==> Server REMOTE server
 //
-exports.REMOTE_CLIENT = 'REMOTE:9003'
-exports.REMOTE_SERVER = 'REMOTE:Netlify/9001'
+exports.REMOTE_CLIENT = 'REMOTE:9103'
+exports.REMOTE_SERVER = 'REMOTE:Netlify/9101'
 exports.REMOTE_DATABASE = 'REMOTE:Elephant/21'
 exports.REMOTE_SERVERURL = 'https://quizserver021n.netlify.app'
 //
-//  9003 - Local Client --> Remote Server --> Remote Database
+//  9103 - Local Client --> Remote Server --> Remote Database
 //
-exports.LOC_REMOTE_REMOTE_CLIENT = 'LOCAL:9003'
+exports.LOC_REMOTE_REMOTE_CLIENT = 'LOCAL:9103'
 //
-//  9013 - Local Client --> Local Server --> Remote Database
+//  9113 - Local Client --> Local Server --> Remote Database
 //
-exports.LOC_LOC_REMOTE_CLIENT = 'LOCAL:9013'
-exports.LOC_LOC_REMOTE_SERVER = 'LOCAL:9001/10'
-exports.LOC_LOC_REMOTE_SERVERURL = 'http://localhost:9001'
+exports.LOC_LOC_REMOTE_CLIENT = 'LOCAL:9113'
+exports.LOC_LOC_REMOTE_SERVER = 'LOCAL:9101/21'
+exports.LOC_LOC_REMOTE_SERVERURL = 'http://localhost:9101'
 //
-//  8003 - Local Client --> Local Server --> Local Database
+//  8103 - Local Client --> Local Server --> Local Database
 //
-exports.LOC_LOC_LOC_CLIENT = 'LOCAL:8003'
-exports.LOC_LOC_LOC_SERVER = 'LOCAL:8001'
+exports.LOC_LOC_LOC_CLIENT = 'LOCAL:8103'
+exports.LOC_LOC_LOC_SERVER = 'LOCAL:8101'
 exports.LOC_LOC_LOC_DATABASE = 'LOCAL'
-exports.LOC_LOC_LOC_SERVERURL = 'http://localhost:8001'
+exports.LOC_LOC_LOC_SERVERURL = 'http://localhost:8101'
 //
 //  Server details
 //
