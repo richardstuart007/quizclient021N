@@ -66,8 +66,9 @@ export default async function checkSignin(props) {
       //
       // No data
       //
-      if (!resultData[0]) {
-        console.log(`No data received `)
+      if (!resultData || !resultData[0]) {
+        console.log(`No data received: sqlClient(${sqlClient}) Email(${email}) Table(userspwd)`)
+        return []
       }
       //
       // Return data
@@ -78,9 +79,8 @@ export default async function checkSignin(props) {
       // Errors
       //
     } catch (err) {
-      const resultData = []
-      console.log(err.message)
-      return resultData
+      console.log(err)
+      return []
     }
   }
   //--------------------------------------------------------------------

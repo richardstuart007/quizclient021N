@@ -88,7 +88,7 @@ export default async function getTable(props) {
       //
       // No data
       //
-      if (!resultData[0]) {
+      if (!resultData || !resultData[0]) {
         console.log(
           `No data received: sqlClient(${sqlClient}) Action(${sqlAction}) Table(${sqlTable}) `
         )
@@ -103,7 +103,7 @@ export default async function getTable(props) {
       //
     } catch (err) {
       const resultData = []
-      console.log(err.message)
+      console.log(err)
       return resultData
     }
   }

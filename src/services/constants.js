@@ -13,7 +13,7 @@ exports.REMOTE_SERVERURL = 'https://quizserver021n.netlify.app'
 //
 exports.LOC_LOC_LOC_CLIENT = 'LOCAL:8103'
 exports.LOC_LOC_LOC_SERVER = 'LOCAL:8101'
-exports.LOC_LOC_LOC_DATABASE = 'LOCAL'
+exports.LOC_LOC_LOC_DATABASE = 'LOCAL/21'
 exports.LOC_LOC_LOC_SERVERURL = 'http://localhost:8101'
 //
 //  9113 - Local Client --> Local Server --> Remote Database
