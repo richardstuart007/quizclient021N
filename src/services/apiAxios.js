@@ -15,13 +15,14 @@ import debugSettings from '../debug/debugSettings'
 const debugLog = debugSettings()
 //===================================================================================
 //
-// methods - post(get), post(update), delete(delete), put(upsert)
+// methods - post(get), post(update), delete(delete), post(upsert)
 //
 export default async function apiAxios(method, url, data) {
   try {
     if (debugLog) console.log(`url(${url}) method(${method})`)
     const response = await axios({
       method: method,
+      withCredentials: true,
       url: url,
       data: data
     })
