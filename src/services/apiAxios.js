@@ -22,7 +22,6 @@ export default async function apiAxios(method, url, data) {
     if (debugLog) console.log(`url(${url}) method(${method})`)
     const response = await axios({
       method: method,
-      withCredentials: true,
       url: url,
       data: data
     })
@@ -30,7 +29,7 @@ export default async function apiAxios(method, url, data) {
     //
     //  Errors
     //
-    if (response.status >= 200 && response.status < 300)
+    if (response.status < 200 || response.status >= 300)
       throw Error('Did not receive expected data')
     //
     //  Return rows
